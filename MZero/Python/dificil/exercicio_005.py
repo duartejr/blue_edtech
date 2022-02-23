@@ -12,45 +12,41 @@ quantidade de rodadas, se não finalize o programa.
 '''
 from random import randint
 
-
 user_wins, pc_wins = 0, 0
-choices = ['pedra', 'papel', 'tesoura']
+options = {'pedra':'tesoura', 'papel':'pedra', 'tesoura':'papel'}
 
 while True:
     rounds = int(input("Iremos jogar quantas vezes? "))
     for i in range(rounds):
         user = input("Faça sua jogada: ").lower()
-        while user not in choices:
+        while user not in options.keys():
             print("Opção inválida tente novamente: (pedra, papel, tesoura)")
             user = input("Faça sua jogada: ").lower()
             
-        pc = choices[randint(0, 2)]
-        print("Minha jogada é " + pc)
+        pc = list(options.keys())[randint(0, 2)]
+        print(f"Minha jogada é {pc}")
 
         if user == pc:
-            print("Empate")
-        elif (user == 'pedra' and pc == 'tesoura') | (user == 'papel' and pc == 'pedra') | (user == 'tesoura' and pc == 'papel'):
+            print("Empate\n")
+        elif options[user] == pc:
             user_wins += 1
             print("Você ganhou essa rodada.\n")
         else:
             pc_wins += 1
             print("Eu ganhei essa rodada.\n")
 
-    print()
-    print("O número de rodadas que você ganhou foi", user_wins)
+    print("\nO número de rodadas que você ganhou foi", user_wins)
     print("O número de rodadas que eu ganhei foi", pc_wins)
-    print()
 
     if user_wins > pc_wins:
-        print("Parabéns você venceu.")
+        print("\nParabéns você venceu.")
     elif user_wins < pc_wins:
-        print("Eu venci hehe")
+        print("\nEu venci hehe")
     else:
-        print("Nessa nós empatamos.")
+        print("\nNessa nós empatamos.")
     
-    print()
-    new_game = input("Quer jogar novamente? (sim ou não) ").lower()
+    new_game = input("\nQuer jogar novamente? (sim ou não) ").lower()
 
     if new_game != "sim":
-        print()
+        print('Até mais')
         break
