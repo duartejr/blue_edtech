@@ -18,11 +18,11 @@ salario = float(input("Salário do funcionário: "))
 while salario < 0:
     salario = float(input("Salário deve ser positivo: "))
 
-if salario <= 280:
+if salario < 280:
     percentual = 20
-elif salario <= 700:
+elif salario < 700:
     percentual = 15
-elif salario <= 1500:
+elif salario < 1500:
     percentual = 10
 else:
     percentual = 5
