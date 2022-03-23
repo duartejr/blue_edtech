@@ -11,15 +11,17 @@ Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 
 '''
 
 saque = int(input("Valor do saque: "))
+notas = [100, 50, 10, 5, 1]
 
-while saque > 600 | saque < 0:
-    print("Saque precisar ser positivou e menor que R$ 600,00")
+while saque > 600 or saque < 0:
+    print("Saque precisar ser positivo e menor que R$ 600,00")
     saque = int(input("Valor do saque: "))
 
 print("Você receberá a seguinte quantidade de notas:")
 
-for valor in [100, 50, 10, 5, 1]:
-    n = saque // valor
-    if n:
-        print(f"Nº de notas de R$ {valor} = {n}")
+for valor in notas:
+    n = saque // valor # 450 // 100 = 4
+    print(f"Nº de notas de R$ {valor} = {n}")
     saque -= n * valor
+    if saque == 0:
+        break
