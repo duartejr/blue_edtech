@@ -6,6 +6,7 @@ Este repositório os projetos desenvolvidos por mim durante o curso de Ciência 
 ## Índice 
 
 * [Módulo 01 - Introdução a Data Science](#Módulo-01---Introdução-a-Data-Science)
+  * [Conteúdo do módulo](##Conteúdo-do-Módulo)
 * [Módulo 02](#Módulo-02)
 
 # Módulo 01 - Introdução a Data Science
