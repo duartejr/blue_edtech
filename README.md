@@ -1,5 +1,5 @@
 # Ciência de Dados Blue
-Este repositório os projetos desenvolvidos por mim durante o curso de Ciência de Dados da Blue.
+Este repositório contém os projetos desenvolvidos por mim durante o curso de Ciência de Dados da Blue.
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
@@ -49,6 +49,6 @@ No projeto 01 foi realizada a implementação de um modelo de Regressão Linear 
 
 No projeto 02 foram utilizados dados de de Câncer de Mama do UCI e Regressão Logística para realizar a classificação de pacientes com câncer ou sem câncer. O objetivo deste conjunto de dados é classificar se uma paciente possui ou não câncer de mama a partir destas variáveis obtidas através do exame de sangue. Foi realizada uma análise exploratória para identificar quais as principais caraceterísticas dos pacientes com câncer e verificou-se que pacientes com câncer, neste dataset, tendem a ser mais velhas que as sem câncer além de terem níveis de insulina e glicose mais elevados no sangue. O modelo implementado teve acurácia de 0.86 e precisão de 0.85.
 
-### Projeto 03 Projeto 03 Agrupamento de clientes
+### Projeto 03 Agrupamento de clientes
 
 [Código do projeto](https://github.com/duartejr/data_science_blue/blob/master/modulo02/projeto_03/projeto_3.ipynb)
