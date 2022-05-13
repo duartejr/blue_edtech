@@ -6,19 +6,22 @@ Este repositório os projetos desenvolvidos por mim durante o curso de Ciência 
 ## Índice 
 
 * [Módulo 01 - Introdução a Data Science](#Módulo-01---Introdução-a-Data-Science)
-  * [Conteúdo do módulo](#Conteúdo-do-Módulo)
-  * [Projeto](#Projeto)
+  * [Conteúdo do módulo 01](#Conteúdo-do-Módulo-01)
+  * [Projeto do módulo 01](#Projeto-do-módulo-01)
 * [Módulo 02](#Módulo-02)
-  * [Conteúdo do módulo](#Conteúdo-do-Módulo)
-  * [Projeto](#Projeto)
+  * [Conteúdo do módulo-02](#Conteúdo-do-Módulo-02)
+  * [Projetos-do-módulo-02](#Projetos-do-módulo-02)
+      * [Projeto 01 Precificação de imóveis](#Projeto-01-Precificação-de-imóveis)
+      * [Projeto 02 Classificação de pacientes](#Projeto-02-Classificação-de-pacientes)
+      * [Projeto 03 Agrupamento de clientes](#Projeto-03-Agrupamento-de-clientes)
 
 # Módulo 01 - Introdução a Data Science
 
-## Conteúdo do Módulo
+## Conteúdo do Módulo 01
 
 No primeiro módulo foram estudados conteúdos introdutórios de Ciência de Dados. As principais ferramentas utilizadas foram: **Orange** e **Pandas**. Foram estudados conceitos sobre os seguintes modelos: KNN, Nayve Bayes, Árvore de Decisão, SVM.
 
-## Projeto
+## Projeto do módulo 01
 
 [Código do projeto](https://github.com/duartejr/data_science_blue/blob/master/modulo01/modulo01_projeto02_implementar_classificar_arvore_decisao.ipynb)
 
@@ -26,16 +29,16 @@ No projeto final do módulo foi realizada a implementação de um modelo de árv
 
 
 # Módulo 02 - Estatística para Data Science
-## Conteúdo do Módulo
+
+## Conteúdo do Módulo 02
+
 Neste módulo foram estudados modelos de machine learning para: regressão, classificação e agrupamento. Além da teoria dos modelos também foi visto como implementar os modelos utilizando bibliotecas do Python. As principais ferramentas utilizadas foram: **pandas**, **statsmodel**, **sklearn**, **matplotlib** e **seaborn**. O modelo de regressão aprendido foi o de Regressão Linear (simples e múltipla). O módelo de classificação estudado foi a Regressão Logística. O modelos de agrupamento estudados foram: K-Means, K-Medoids e Hierárquico.
 um texto
 
-## Projetos
+## Projetos do módulo 02
 
-## [Projeto 01](https://github.com/duartejr/data_science_blue/blob/master/modulo02/projeto_01/projeto_1.ipynb)
+## Projeto 01 Precificação de imóveis
 
-No projeto 01 foi realizada a implementação de um modelo de Regressão Linear Multivariada para realizar a predição de preços de casas.
+[Código do projeto](https://github.com/duartejr/data_science_blue/blob/master/modulo02/projeto_01/projeto_1.ipynb)
 
-
-
-outro texto
+No projeto 01 foi realizada a implementação de um modelo de Regressão Linear Multivariada para realizar a predição de preços de imóveis. O Dataset utilizado está dispnível do Kaggle e conta com dados de diversos imóveis da região de King County. O objetivo é implmentar capaz de predizer o valor do imóvel a partir do conjunto de informaçãos fornecidos. Para alcançar o melhor desempenho possível do modelo de Regressão Linear foi realizada a Análise Exploratória dos dados a fim de identificar quais variáveis mais contribuem para o preço dos imóveis da região. Também foi ulizado o método RFE para realizar a seleção automática das variáveis mais importantes para a definição dos preços das casas. O modelo final teve uma acurácia de 0,85 e foram selecionadas as seguintes variáveis como preditores: nº de banheiros, qualidade da vista, latitude, área do imóvel, idade do imóvel.
